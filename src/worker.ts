@@ -154,5 +154,6 @@ export default {
     }
 
     return new Response(getLanding(), { headers: { 'Content-Type': 'text/html;charset=UTF-8', 'Content-Security-Policy': CSP } });
+    'X-Frame-Options': 'DENY',
   }
 };
